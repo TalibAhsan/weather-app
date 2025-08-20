@@ -1,16 +1,38 @@
-# twoo_climate
 
-A new Flutter project.
+# Weather App
+
+A simple Flutter weather app that fetches and displays current weather data using OpenWeatherMap API and device location.
+
+## Features
+- Get current location using device GPS
+- Fetch weather data from OpenWeatherMap
+- Display weather info and emoji based on conditions
+- Simple UI with a 'Get Location' button
+- Navigation to weather details screen
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK
+- Android/iOS emulator or device
 
-A few resources to get you started if this is your first Flutter project:
+### Setup
+1. Clone this repository
+2. Run `flutter pub get` to install dependencies
+3. Make sure your `pubspec.yaml` does not reference missing assets
+4. Update your Android NDK version in `android/app/build.gradle.kts` if needed
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Usage
+- Run the app with `flutter run`
+- Click the 'Get Location' button to fetch weather data
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+- [geolocator](https://pub.dev/packages/geolocator) for location
+- [http](https://pub.dev/packages/http) for API calls
+
+## Notes
+- Make sure location permissions are granted on your device/emulator
+- You can customize weather display and add more features as needed
+
+## License
+MIT
